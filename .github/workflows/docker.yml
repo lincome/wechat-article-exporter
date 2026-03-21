@@ -2,6 +2,7 @@ name: Build and Push Multi-Arch Docker Image
 
 # 触发条件：推送 v* 标签时（如 git tag v1.1.0 && git push --tags）
 on:
+  workflow_dispatch:
   push:
     tags:
       - 'v*'
